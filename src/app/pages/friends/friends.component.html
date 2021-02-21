@@ -1,0 +1,14 @@
+<ScrollView class="friends-page">
+  <StackLayout>
+    <Label text="Friends List"></Label>
+    <Button text="Landing" (tap)="go('landing')"></Button>
+    <StackLayout class="tile highlight">
+      <StackLayout *ngFor="let friend of friends">
+        <StackLayout class="tile-title">
+          <Label [text]="friend.username"></Label>
+        </StackLayout>
+        <Label textWrap="true" text="Here is some info"></Label>
+      </StackLayout>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>
