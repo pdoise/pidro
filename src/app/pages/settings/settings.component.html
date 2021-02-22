@@ -1,0 +1,35 @@
+<StackLayout class="page">
+  <Label text="Settings" class="title"></Label>
+  <Button
+    class="btn btn-primary"
+    (tap)="go('profile')">
+    <FormattedString>
+      <Span class="far" text="&#xf2bd;"></Span>
+      <Span text="  Profile"></Span>
+    </FormattedString>
+  </Button>
+  <Button
+    class="btn btn-primary"
+    (tap)="go('rules')">
+    <FormattedString>
+      <Span class="fas" text="&#xf5ae;"></Span>
+      <Span text="  Rules"></Span>
+    </FormattedString>
+  </Button>
+  <Button
+    class="btn btn-primary"
+    (tap)="go('contact')">
+    <FormattedString>
+      <Span class="fas" text="&#xf199;"></Span>
+      <Span text="  Contact"></Span>
+    </FormattedString>
+  </Button>
+  <Button
+    class="btn btn-primary"
+    (tap)="go('about')">
+    <FormattedString>
+      <Span class="fas" text="&#xf05a;"></Span>
+      <Span text="  About"></Span>
+    </FormattedString>
+  </Button>
+</StackLayout>
