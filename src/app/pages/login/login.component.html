@@ -1,11 +1,11 @@
 <GridLayout class="page" rows="*, auto, auto, *, auto">
 
-  <StackLayout row="1" class="card">
-    <GridLayout rows="auto" columns="*, auto, auto, *" class="card-header">
+  <StackLayout row="1" class="panel">
+    <GridLayout rows="auto" columns="*, auto, auto, *" class="panel-header">
       <Label row="0" col="1" class="logo-left" text="PIDRO"></Label>
       <Label row="0" col="2" class="logo-right" text="ALLSTARS"></Label>
     </GridLayout>
-    <StackLayout class="card-body">
+    <StackLayout class="panel-body">
       <StackLayout class="input-field">
         <TextField hint="Username" class="input"></TextField>
       </StackLayout>
@@ -24,8 +24,8 @@
     </StackLayout>
   </StackLayout>
 
-  <StackLayout class="card" row="2">
-    <StackLayout class="card-body">
+  <StackLayout class="panel" row="2">
+    <StackLayout class="panel-body">
       <GridLayout>
         <Label text="Not a registered user?"></Label>
         <Button
@@ -37,5 +37,5 @@
     </StackLayout>
   </StackLayout>
 
-  <Label row="4" text="Copyright &copy; Version: 1.0" class="footer"></Label>
+  <Label row="4" text="Copyright &copy; Version: 1.0" class="version"></Label>
 </GridLayout>

@@ -12,8 +12,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FriendsComponent } from './pages/friends/friends.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { LoginComponent } from './pages/login/login.component';
-import { UserService } from './models/users/user.service';
+import { ProfileComponent } from "./pages/profile/profile.component";
+import { RulesComponent } from "./pages/rules/rules.component";
 import { TableComponent } from "./pages/table/table.component";
+import { SettingsComponent } from "./pages/settings/settings.component";
+import { UserService } from './models/users/user.service';
 
 FriendsComponent
 
@@ -41,7 +44,10 @@ FriendsComponent
     FriendsComponent,
     LandingComponent,
     LoginComponent,
-    TableComponent
+    ProfileComponent,
+    RulesComponent,
+    TableComponent,
+    SettingsComponent
   ],
   providers: [
     UserService

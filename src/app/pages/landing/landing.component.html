@@ -1,7 +1,48 @@
-<StackLayout class="landing-page">
+<GridLayout class="page" rows="*, auto, auto, *, auto">
+
+  <StackLayout row="1" class="panel">
+    <GridLayout rows="auto" columns="*, auto, auto, *" class="panel-header">
+      <Label row="0" col="0" class="logo-left" text="PIDRO"></Label>
+      <Label row="0" col="1" class="logo-right" text="ALLSTARS"></Label>
+      <Label row="0" col="3"
+        class="fas fa-cog"
+        text="&#xf013;"
+        (tap)="go('settings')">
+      </Label>
+    </GridLayout>
+    <StackLayout class="panel-body">
+      <GridLayout rows="auto" columns="auto, auto">
+        <Label col="0" class="far fa-user-circle" text="&#xf2bd;"></Label>
+        <StackLayout col="1" class="user-info">
+          <Label text="Fila Fill"></Label>
+          <Label text="Rank: 1"></Label>
+        </StackLayout>
+      </GridLayout>
+    </StackLayout>
+  </StackLayout>
+
+  <StackLayout class="panel" row="2">
+    <StackLayout class="panel-body">
+      <GridLayout>
+        <Label text="Friends List"></Label>
+        <Button
+          class="btn btn-primary"
+          text="Find Friends"
+          (tap)="go('friends')">
+        </Button>
+      </GridLayout>
+    </StackLayout>
+  </StackLayout>
+
+  <Label row="4" text="Copyright &copy; Version: 1.0" class="version"></Label>
+</GridLayout>
+
+
+<!--<StackLayout class="landing-page">
   <Label text="Welcome to PIDROALLSTARS!" class="title" textWrap="true"></Label>
   <Button text="About" (tap)="go('about')"></Button>
   <Button text="Contact" (tap)="go('contact')"></Button>
   <Button text="Friends" (tap)="go('friends')"></Button>
   <Button text="Table" (tap)="go('table')"></Button>
-</StackLayout>
+  <Label text="&#xf019;" class="fa-brands"></Label>
+</StackLayout>-->

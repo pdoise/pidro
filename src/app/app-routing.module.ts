@@ -7,7 +7,10 @@ import { ContactComponent } from "./pages/contact/contact.component";
 import { FriendsComponent } from "./pages/friends/friends.component";
 import { LandingComponent } from "./pages/landing/landing.component";
 import { LoginComponent } from "./pages/login/login.component";
+import { ProfileComponent } from "./pages/profile/profile.component";
+import { RulesComponent } from "./pages/rules/rules.component";
 import { TableComponent } from "./pages/table/table.component";
+import { SettingsComponent } from "./pages/settings/settings.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -15,8 +18,11 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "friends", component: FriendsComponent },
   { path: "landing", component: LandingComponent },
+  { path: "profile", component: ProfileComponent },
+  { path: "rules", component: RulesComponent },
   { path: "login", component: LoginComponent },
   { path: "table", component: TableComponent },
+  { path: "settings", component: SettingsComponent },
 ];
 
 @NgModule({
