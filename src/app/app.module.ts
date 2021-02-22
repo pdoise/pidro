@@ -13,6 +13,7 @@ import { FriendsComponent } from './pages/friends/friends.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { LoginComponent } from './pages/login/login.component';
 import { UserService } from './models/users/user.service';
+import { TableComponent } from "./pages/table/table.component";
 
 FriendsComponent
 
@@ -39,7 +40,8 @@ FriendsComponent
     ContactComponent,
     FriendsComponent,
     LandingComponent,
-    LoginComponent
+    LoginComponent,
+    TableComponent
   ],
   providers: [
     UserService

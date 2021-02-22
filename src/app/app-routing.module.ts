@@ -7,6 +7,7 @@ import { ContactComponent } from "./pages/contact/contact.component";
 import { FriendsComponent } from "./pages/friends/friends.component";
 import { LandingComponent } from "./pages/landing/landing.component";
 import { LoginComponent } from "./pages/login/login.component";
+import { TableComponent } from "./pages/table/table.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: "friends", component: FriendsComponent },
   { path: "landing", component: LandingComponent },
   { path: "login", component: LoginComponent },
+  { path: "table", component: TableComponent },
 ];
 
 @NgModule({
