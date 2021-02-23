@@ -43,5 +43,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<!--TODO: Better messaging when user denies access to camera-->
+	<key>NSCameraUsageDescription</key>
+    <string>You can go to your device settings to enable your camera at any time</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>You can go to your device settings to allow access at any time</string>
 </dict>
 </plist>

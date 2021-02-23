@@ -1,0 +1,12 @@
+<StackLayout class="page">
+    <Label text="Profile" class="title"></Label>
+    <TextField class="header" text="{{ name }}" hint="Enter name..."></TextField>
+    <Button (tap)="takePicture()" text="Add Profile Picture"></Button>
+    <Button
+      class="btn btn-primary"
+      (tap)="go('landing')">
+      <FormattedString>
+        <Span text="  landing"></Span>
+      </FormattedString>
+    </Button>
+  </StackLayout>
