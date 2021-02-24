@@ -42,89 +42,29 @@ This is where the vast majority of your CSS code goes. */
   background-position: center top;
 }
 
-Label {
-  margin-left: 10;
-  margin-right: 10;
-  margin-bottom: 10;
+.primary {
+  color: #aa7f40;
+}
+
+.secondary {
+  color: #d7a965;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background: #0b1b0f;
 }
 
 .btn-primary {
-  font-size: 12;
-  padding: 0 10;
+  color:#d7a965;
   background: linear-gradient(#1e3221, #102013);
-  border: 1 solid #29452d;
-  border-radius: 3;
-  color: #d7a965;
+  border-color:#102013;
 }
 
-.btn-primary:active {
-  background: #172c1b;
-  color: #d7a965;
-}
 .link {
+  color:#d7a965;
   text-decoration: underline;
-}
-
-TextField {
-  padding-left: 10;
-  background-color: #fff;
-}
-
-TextView {
-  padding-left: 5;
-  background-color: #fff;
-}
-
-.title {
-  font-size: 30;
-  text-align: center;
-  horizontal-align: center;
-  margin: 20;
-  color: #d7a965;
-}
-
-.sub-title {
-  font-size: 20;
-  color: #d7a965;
-}
-
-.panel {
-  width: 80%;
-  border-radius: 3;
-  background: #0b1b0f;
-  color: #d7a965;
-  padding: 5 15;
-  box-shadow: 0 0 10 4 #00000073;
-  margin-bottom: 10;
-}
-
-.panel-header {
-  padding-top: 10;
-  font-size: 23;
-}
-
-.logo-left {
-  color: #aa7f40;
-  margin-right: 0;
-}
-.logo-right {
-  margin-left: 0;
-  font-weight: 800;
-}
-
-.panel-body Label {
-  padding-left: 5;
-  padding-top: 12;
-}
-
-.panel-body .btn {
-  horizontal-align: right;
-}
-
-.version {
-  width: 80%;
-  padding: 15;
-  color: #d7a965;
-  height: 15;
-  line-height: 15;
 }

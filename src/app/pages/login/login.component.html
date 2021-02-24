@@ -1,22 +1,22 @@
-<GridLayout class="page" rows="*, auto, auto, *, auto">
+<GridLayout class="page" rows="*, auto, auto, auto, *, auto">
 
-  <StackLayout row="1" class="panel">
-    <GridLayout rows="auto" columns="*, auto, auto, *" class="panel-header">
-      <Label row="0" col="1" class="logo-left" text="PIDRO"></Label>
-      <Label row="0" col="2" class="logo-right" text="ALLSTARS"></Label>
+  <StackLayout row="1" class="m-x-25 nt-form -border bg-black">
+    <GridLayout rows="auto" columns="*, auto, auto, *" class="m-t-10">
+      <Label row="0" col="1" class="h2 primary" text="PIDRO"></Label>
+      <Label row="0" col="2" class="h2 secondary font-weight-bold" text="ALLSTARS"></Label>
     </GridLayout>
-    <StackLayout class="panel-body">
-      <StackLayout class="input-field">
-        <TextField hint="Username" class="input"></TextField>
+    <StackLayout class="m-t-10">
+      <StackLayout>
+        <TextField  class="-border bg-white" hint="Username"></TextField>
       </StackLayout>
-      <StackLayout class="input-field">
-        <TextField hint="Password" class="input"></TextField>
+      <StackLayout>
+        <TextField class="-border bg-white" hint="Password"></TextField>
       </StackLayout>
       <GridLayout>
-        <Label class="link" text="Forgot your password?">
+        <Label class="link m-l-15" text="Forgot your password?">
         </Label>
         <Button
-          class="btn btn-primary"
+          class="btn-primary pull-right"
           text="Log In"
           (tap)="go('landing')">
         </Button>
@@ -24,12 +24,14 @@
     </StackLayout>
   </StackLayout>
 
-  <StackLayout class="panel" row="2">
-    <StackLayout class="panel-body">
+  <StackLayout row="2" class="m-5"></StackLayout>
+
+  <StackLayout row="3" class="m-x-25 -border bg-black">
+    <StackLayout>
       <GridLayout>
-        <Label text="Not a registered user?"></Label>
+        <Label class="secondary m-l-15" text="Not a registered user?"></Label>
         <Button
-          class="btn btn-primary"
+          class="btn-primary pull-right"
           text="Register for free"
           (tap)="go('landing')">
         </Button>
@@ -37,5 +39,5 @@
     </StackLayout>
   </StackLayout>
 
-  <Label row="4" text="Copyright &copy; Version: 1.0" class="version"></Label>
+  <Label row="5" text="Copyright &copy; Version: 1.0" class="secondary text-center footnote"></Label>
 </GridLayout>
