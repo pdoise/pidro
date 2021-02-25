@@ -1,4 +1,4 @@
-<GridLayout class="page" rows="auto, auto, auto, auto, *, auto">
+<GridLayout class="page" rows="auto, auto, auto, auto, auto, auto, *, auto">
 
   <StackLayout row="0" class="m-5"></StackLayout>
 
@@ -27,8 +27,28 @@
 
   <StackLayout row="3" class="m-x-25 -border bg-black">
     <StackLayout class="m-l-15">
+      <GridLayout rows="auto, auto, auto">
+        <Button row="0"
+          class="btn btn-primary"
+          text="Enter Ranked Matchmaking"
+          (tap)="go('')">
+        </Button>
+        <Label row="1" class="h4 secondary text-center" text="Or"></Label>
+        <Button row="2"
+          class="btn btn-primary"
+          text="Play Custom Game"
+          (tap)="go('')">
+        </Button>
+      </GridLayout>
+    </StackLayout>
+  </StackLayout>
+
+  <StackLayout row="4" class="m-5"></StackLayout>
+
+  <StackLayout row="5" class="m-x-25 -border bg-black">
+    <StackLayout class="m-l-15">
       <GridLayout>
-        <Label class="secondary" text="Friends List"></Label>
+        <Label class="h2 secondary" text="Friends List"></Label>
         <Button
           class="btn btn-primary pull-right"
           text="Find Friends"
@@ -38,5 +58,5 @@
     </StackLayout>
   </StackLayout>
 
-  <Label row="5" text="Copyright &copy; Version: 1.0" class="secondary text-center footnote"></Label>
+  <Label row="7" text="Copyright &copy; Version: 1.0" class="secondary text-center footnote"></Label>
 </GridLayout>

@@ -11,7 +11,7 @@ import { UserService } from '../../models/users/user.service';
   styleUrls: ['./friends.component.scss']
 })
 export class FriendsComponent implements OnInit {
-  friends: User[];
+  friends: Array<User>;
   friendsSubscription: Subscription;
   error: any;
 
@@ -27,10 +27,11 @@ export class FriendsComponent implements OnInit {
   getFriends(): void {
     this.friendsSubscription = this.userService
       .getUsers()
-      .subscribe((friends) => { (this.friends = friends) })
+      .subscribe((friends) => { this.friends = friends })
   }
 
   go(route: string): void {
+    console.log('hi')
     this.router.navigate([route], {
       animated: true,
       transition: { name: 'fade' }

@@ -58,10 +58,12 @@ This is where the vast majority of your CSS code goes. */
   background: #0b1b0f;
 }
 
-.btn-primary {
+Button.btn-primary {
   color:#d7a965;
-  background: linear-gradient(#1e3221, #102013);
-  border-color:#102013;
+  background: transparent;
+  border-color: #d7a965;
+  border-width: 1;
+  padding: 0 15;
 }
 
 .link {

@@ -13,7 +13,7 @@ import { TableComponent } from "./pages/table/table.component";
 import { SettingsComponent } from "./pages/settings/settings.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/login", pathMatch: "full" },
+  { path: "", redirectTo: "/friends", pathMatch: "full" },
   { path: "about", component: AboutComponent },
   { path: "contact", component: ContactComponent },
   { path: "friends", component: FriendsComponent },
