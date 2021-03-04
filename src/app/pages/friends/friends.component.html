@@ -1,27 +1,27 @@
-<ScrollView class="page">
-  <StackLayout>
-    <GridLayout rows="*, *" class="m-b-25 -border bg-black">
+<StackLayout class="page">
+  <GridLayout rows="auto, auto">
+    <GridLayout row="0" rows="*, *" class="m-b-25 -border bg-black">
       <Label row="0" class="fas" text="&#xf053;" (tap)="go('landing')"></Label>
       <Label row="0" class="m-l-12 secondary" text="Back" (tap)="go('landing')"></Label>
       <Label row="1" class="h1 secondary text-center" text="Friends List"></Label>
     </GridLayout>
-    <StackLayout class="tile highlight">
+    <StackLayout row="1">
       <StackLayout *ngFor="let friend of friends">
 
         <StackLayout class="m-x-25 -border bg-black">
-
-          <GridLayout rows="auto" columns="auto, auto">
-            <Label col="0" class="far fa-user-circle" text="&#xf2bd;"></Label>
-            <StackLayout col="1" class="m-l-20 m-t-8">
-              <Label class="secondary" [text]="friend.username"></Label>
-              <Label class="secondary" [text]="'Rank: ' + friend.rank"></Label>
-            </StackLayout>
-          </GridLayout>
+          <ScrollView>
+            <GridLayout rows="auto" columns="auto, auto">
+              <Label col="0" class="far fa-user-circle" text="&#xf2bd;"></Label>
+              <StackLayout col="1" class="m-l-20 m-t-8">
+                <Label class="secondary" [text]="friend.username"></Label>
+                <Label class="secondary" [text]="'Rank: ' + friend.rank"></Label>
+              </StackLayout>
+            </GridLayout>
+          </ScrollView>
         </StackLayout>
 
         <StackLayout class="m-t-4"></StackLayout>
-
       </StackLayout>
     </StackLayout>
-  </StackLayout>
-</ScrollView>
+  </GridLayout>
+</StackLayout>

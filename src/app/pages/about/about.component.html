@@ -1,16 +1,9 @@
-<ScrollView class="about-page">
-  <StackLayout>
-    <Label text="About Us" class="title"></Label>
-    <Label textWrap="true" text="We are a small online..."></Label>
-    <Label text="Our Mission" class="sub-title"></Label>
-    <Label textWrap="true" text="We exist to bring..."></Label>
-    <Label text="History" class="sub-title"></Label>
-    <Label textWrap="true" text="Here's some text..."></Label>
-    <Label textWrap="true" text="Here's some text..."></Label>
-    <Label textWrap="true" text="Here's some text..."></Label>
-    <Label textWrap="true" text="Here's some text..."></Label>
-    <Label textWrap="true" text="Here's some text..."></Label>
-    <Label textWrap="true" text="Here's some text..."></Label>
-    <Label textWrap="true" text="Here's some text..."></Label>
-  </StackLayout>
-</ScrollView>
+<StackLayout class="page">
+  <GridLayout rows="auto">
+    <GridLayout row="0" rows="*, *" class="m-b-25 -border bg-black">
+      <Label row="0" class="fas" text="&#xf053;" (tap)="go('landing')"></Label>
+      <Label row="0" class="m-l-12 secondary" text="Back" (tap)="go('landing')"></Label>
+      <Label row="1" class="h1 secondary text-center" text="About Us"></Label>
+    </GridLayout>
+  </GridLayout>
+</StackLayout>

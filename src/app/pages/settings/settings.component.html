@@ -1,35 +1,43 @@
 <StackLayout class="page">
-  <Label text="Settings" class="title"></Label>
-  <Button
-    class="btn btn-primary"
-    (tap)="go('profile')">
-    <FormattedString>
-      <Span class="far" text="&#xf2bd;"></Span>
-      <Span text="  Profile"></Span>
-    </FormattedString>
-  </Button>
-  <Button
-    class="btn btn-primary"
-    (tap)="go('rules')">
-    <FormattedString>
-      <Span class="fas" text="&#xf5ae;"></Span>
-      <Span text="  Rules"></Span>
-    </FormattedString>
-  </Button>
-  <Button
-    class="btn btn-primary"
-    (tap)="go('contact')">
-    <FormattedString>
-      <Span class="fas" text="&#xf199;"></Span>
-      <Span text="  Contact"></Span>
-    </FormattedString>
-  </Button>
-  <Button
-    class="btn btn-primary"
-    (tap)="go('about')">
-    <FormattedString>
-      <Span class="fas" text="&#xf05a;"></Span>
-      <Span text="  About"></Span>
-    </FormattedString>
-  </Button>
+  <GridLayout rows="auto, auto">
+    <GridLayout row="0" rows="*, *" class="m-b-25 -border bg-black">
+      <Label row="0" class="fas" text="&#xf053;" (tap)="go('landing')"></Label>
+      <Label row="0" class="m-l-12 secondary" text="Back" (tap)="go('landing')"></Label>
+      <Label row="1" class="h1 secondary text-center" text="Settings"></Label>
+    </GridLayout>
+    <StackLayout row="1">
+      <Button
+        class="btn btn-primary"
+        (tap)="go('profile')">
+        <FormattedString>
+          <Span class="far" text="&#xf2bd;"></Span>
+          <Span text="  Profile"></Span>
+        </FormattedString>
+      </Button>
+      <Button
+        class="btn btn-primary"
+        (tap)="go('rules')">
+        <FormattedString>
+          <Span class="fas" text="&#xf5ae;"></Span>
+          <Span text="  Rules"></Span>
+        </FormattedString>
+      </Button>
+      <Button
+        class="btn btn-primary"
+        (tap)="go('contact')">
+        <FormattedString>
+          <Span class="fas" text="&#xf199;"></Span>
+          <Span text="  Contact"></Span>
+        </FormattedString>
+      </Button>
+      <Button
+        class="btn btn-primary"
+        (tap)="go('about')">
+        <FormattedString>
+          <Span class="fas" text="&#xf05a;"></Span>
+          <Span text="  About"></Span>
+        </FormattedString>
+      </Button>
+    </StackLayout>
+  </GridLayout>
 </StackLayout>

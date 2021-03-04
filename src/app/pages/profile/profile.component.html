@@ -1,12 +1,25 @@
 <StackLayout class="page">
-    <Label text="Profile" class="title"></Label>
-    <TextField class="header" text="{{ name }}" hint="Enter name..."></TextField>
-    <Button (tap)="takePicture()" text="Add Profile Picture"></Button>
-    <Button
-      class="btn btn-primary"
-      (tap)="go('landing')">
-      <FormattedString>
-        <Span text="  landing"></Span>
-      </FormattedString>
-    </Button>
-  </StackLayout>
+  <GridLayout rows="auto, auto, auto">
+    <GridLayout row="0" rows="*, *" class="m-b-25 -border bg-black">
+      <Label row="0" class="fas" text="&#xf053;" (tap)="go('landing')"></Label>
+      <Label row="0" class="m-l-12 secondary" text="Back" (tap)="go('landing')"></Label>
+      <Label row="1" class="h1 secondary text-center" text="Profile"></Label>
+    </GridLayout>
+    <StackLayout row="1" class="m-x-25 -border bg-black">
+      <GridLayout rows="auto" columns="auto, auto">
+        <Label col="0" class="far fa-user-circle" text="&#xf2bd;"></Label>
+        <StackLayout col="1" class="m-l-20 m-t-8">
+          <Label class="secondary" [text]="'Phillip'"></Label>
+          <Label class="secondary" [text]="'Rank: ' + 1"></Label>
+        </StackLayout>
+      </GridLayout>
+    </StackLayout>
+    <StackLayout row="2" class="m-x-25 m-y-25 -border bg-black">
+      <Button class="btn btn-primary"
+        (tap)="takePicture()"
+        text="Add Profile Picture">
+      </Button>
+      <TextField class="-border bg-white" hint="Username"></TextField>
+    </StackLayout>
+  </GridLayout>
+</StackLayout>
