@@ -1,9 +1,14 @@
-<GridLayout class="page" rows="auto, auto, auto, auto, auto, auto, *, auto">
+<GridLayout class="page" rows="auto, auto, auto, auto, auto">
 
-  <StackLayout row="0" class="m-5"></StackLayout>
-
-  <StackLayout row="1" class="m-x-25 nt-form -border bg-black">
+  <StackLayout row="0" class="-border bg-black">
     <GridLayout rows="auto" columns="*, auto, auto, *" class="m-t-10">
+      <GridLayout row="0" col="0" rows="auto" columns="auto, auto">
+        <Label col="0" class="far fa-user-circle" text="&#xf2bd;"></Label>
+        <StackLayout col="1" class="m-l-5">
+          <Label class="secondary" text="Fila Fill"></Label>
+          <Label class="secondary" text="Rank: 1"></Label>
+        </StackLayout>
+      </GridLayout>
       <Label row="0" col="1" class="h2 primary" text="PIDRO"></Label>
       <Label row="0" col="2" class="h2 secondary font-weight-bold" text="ALLSTARS"></Label>
       <Label row="0" col="3"
@@ -12,51 +17,45 @@
         (tap)="go('settings')">
       </Label>
     </GridLayout>
-    <StackLayout class="m-t-10">
-      <GridLayout rows="auto" columns="auto, auto">
-        <Label col="0" class="far fa-user-circle" text="&#xf2bd;"></Label>
-        <StackLayout col="1" class="m-l-20 m-t-30">
-          <Label class="secondary" text="Fila Fill"></Label>
-          <Label class="secondary" text="Rank: 1"></Label>
-        </StackLayout>
-      </GridLayout>
-    </StackLayout>
   </StackLayout>
 
-  <StackLayout row="2" class="m-5"></StackLayout>
+  <StackLayout row="1" class="m-t-20"></StackLayout>
 
-  <StackLayout row="3" class="m-x-25 -border bg-black">
-    <StackLayout class="m-l-15">
-      <GridLayout rows="auto, auto, auto">
-        <Button row="0"
-          class="btn btn-primary"
-          text="Enter Ranked Matchmaking"
-          (tap)="go('')">
-        </Button>
-        <Label row="1" class="h4 secondary text-center" text="Or"></Label>
-        <Button row="2"
-          class="btn btn-primary"
-          text="Play Custom Game"
-          (tap)="go('')">
-        </Button>
-      </GridLayout>
+  <GridLayout row="2" rows="auto" columns="*, *">
+
+    <StackLayout row="1" col="0" class="m-x-25 -border bg-black">
+      <StackLayout class="m-l-15">
+        <GridLayout rows="auto, auto, auto">
+          <Button row="0"
+            class="btn btn-primary"
+            text="Enter Ranked Matchmaking"
+            (tap)="go('')">
+          </Button>
+          <Label row="1" class="h4 secondary text-center" text="Or"></Label>
+          <Button row="2"
+            class="btn btn-primary"
+            text="Play Custom Game"
+            (tap)="go('')">
+          </Button>
+        </GridLayout>
+      </StackLayout>
     </StackLayout>
-  </StackLayout>
 
-  <StackLayout row="4" class="m-5"></StackLayout>
-
-  <StackLayout row="5" class="m-x-25 -border bg-black">
-    <StackLayout class="m-l-15">
-      <GridLayout>
-        <Label class="h2 secondary" text="Friends List"></Label>
-        <Button
-          class="btn btn-primary pull-right"
-          text="Find Friends"
-          (tap)="go('friends')">
-        </Button>
-      </GridLayout>
+    <StackLayout col="1" class="m-x-25 -border bg-black">
+      <StackLayout class="m-l-15">
+        <GridLayout>
+          <Label class="h2 secondary" text="Friends List"></Label>
+          <Button
+            class="btn btn-primary pull-right"
+            text="Find Friends"
+            (tap)="go('friends')">
+          </Button>
+        </GridLayout>
+      </StackLayout>
     </StackLayout>
-  </StackLayout>
+  </GridLayout>
 
-  <Label row="7" text="Copyright &copy; Version: 1.0" class="secondary text-center footnote"></Label>
+  <StackLayout row="3" class="m-t-20"></StackLayout>
+
+  <Label row="4" text="Copyright &copy; Version: 1.0" class="secondary text-center footnote"></Label>
 </GridLayout>
