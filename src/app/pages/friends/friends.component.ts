@@ -21,17 +21,16 @@ export class FriendsComponent implements OnInit {
     ) {}
 
   ngOnInit(): void {
-    this.getFriends();
+    this.getUsers();
   }
 
-  getFriends(): void {
+  getUsers(): void {
     this.friendsSubscription = this.userService
       .getUsers()
       .subscribe((friends) => { this.friends = friends })
   }
 
   go(route: string): void {
-    console.log('hi')
     this.router.navigate([route], {
       animated: true,
       transition: { name: 'fade' }

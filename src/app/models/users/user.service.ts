@@ -8,15 +8,18 @@ import { User } from './user.model';
 @Injectable({ providedIn: 'root' })
 
 export class UserService {
-  private friendsUrl = 'api/friends';
 
-  constructor(
-    private http: HttpClient
-  ) {}
+  constructor(private http: HttpClient) {}
+
+  getFriends(): Observable<User[]> {
+    return this.http
+      .get<User[]>(`api/friends`)
+      .pipe(map(data => data), catchError(this.handleError));
+  }
 
   getUsers(): Observable<User[]> {
     return this.http
-      .get<User[]>(this.friendsUrl)
+      .get<User[]>(`api/users`)
       .pipe(map(data => data), catchError(this.handleError));
   }
 

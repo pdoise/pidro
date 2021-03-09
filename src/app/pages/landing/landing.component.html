@@ -23,8 +23,10 @@
 
   <GridLayout row="2" rows="auto" columns="*, *">
 
-    <StackLayout row="1" col="0" class="m-x-25 -border bg-black">
-      <StackLayout class="m-l-15">
+    <StackLayout row="1" col="0">
+
+      <Label class="h2 secondary text-center m-t-25" text="Find Game"></Label>
+      <StackLayout class="m-x-25 -border bg-black">
         <GridLayout rows="auto, auto, auto">
           <Button row="0"
             class="btn btn-primary"
@@ -41,16 +43,28 @@
       </StackLayout>
     </StackLayout>
 
-    <StackLayout col="1" class="m-x-25 -border bg-black">
-      <StackLayout class="m-l-15">
-        <GridLayout>
-          <Label class="h2 secondary" text="Friends List"></Label>
-          <Button
-            class="btn btn-primary pull-right"
-            text="Find Friends"
-            (tap)="go('friends')">
-          </Button>
-        </GridLayout>
+    <StackLayout col="1" class="m-x-25">
+      <GridLayout>
+        <Label class="h2 secondary" text="Your Friends"></Label>
+        <Button
+          class="btn btn-primary pull-right"
+          text="Find Friends"
+          (tap)="go('friends')">
+        </Button>
+      </GridLayout>
+      <StackLayout *ngFor="let friend of friends">
+        <StackLayout class="-border bg-black">
+          <ScrollView>
+            <GridLayout rows="auto" columns="auto, auto">
+              <Label col="0" class="far fa-user-circle" text="&#xf2bd;"></Label>
+              <StackLayout col="1" class="m-l-20 m-t-8">
+                <Label class="secondary" [text]="friend.username"></Label>
+                <Label class="secondary" [text]="'Rank: ' + friend.rank"></Label>
+              </StackLayout>
+            </GridLayout>
+          </ScrollView>
+        </StackLayout>
+        <StackLayout class="m-t-4"></StackLayout>
       </StackLayout>
     </StackLayout>
   </GridLayout>
